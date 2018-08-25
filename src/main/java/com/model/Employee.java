@@ -1,26 +1,28 @@
 package com.model;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "tblEmployees")
+@Table(name = "Employees")
 public class Employee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "empID", updatable = false, nullable = false)
-    private Long id;
+    @GeneratedValue
+    @Column(name = "empID")
+    private long id;
 
-    @Column(name = "empName")
     private String name;
 
-    @Column(name = "empActive")
-    private boolean active;
+    private String active;
 
     @ManyToOne
     @JoinColumn(name = "dpID")

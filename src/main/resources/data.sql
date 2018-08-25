@@ -1,11 +1,30 @@
-insert into tbl_Departments values (1,'IT');
+insert into tbl_Departments values(1,'IT');
+insert into tbl_Departments values(2,'security');
+insert into tbl_Departments values(3,'management');
+insert into tbl_Departments values(4,'hr');
+insert into tbl_Departments values(5,'tech');
+insert into tbl_Departments values(6,'finance');
 
-insert into tbl_Departments values (2,'security');
-
-insert into tbl_Departments values (3,'management');
-
-insert into tbl_Employees values (1,'Andriy',true,1);
-
-insert into tbl_Employees values (2,'oleh',false,2);
-
-insert into tbl_Employees values (3,'evgen',true,3);
+insert into Employees values(1,'yes','andriy',1);
+insert into Employees values(2,'no','oleh',2);
+insert into Employees values(3,'yes','evgen',3);
+insert into Employees values(4,'yes','petro',4);
+insert into Employees values(5,'yes','pavlo',5);
+insert into Employees values(6,'no','taras',6);
+insert into Employees values(7,'yes','ostap',2);
+insert into Employees values(8,'no','vasil',1);
+insert into Employees values(9,'no','volodumur',3);
+insert into Employees values(10,'no','kateruna',6);
+insert into Employees values(11,'yes','evgen',6);
+insert into Employees values(12,'yes','andriy',2);
+insert into Employees values(13,'yes','olga',5);
+insert into Employees values(14,'yes','victoria',4);
+insert into Employees values(15,'no','nadia',3);
+insert into Employees values(16,'no','pavlo',5);
+insert into Employees values(17,'yes','oleh',5);
+insert into Employees values(18,'yes','oleksandeer',1);
+insert into Employees values(19,'no','evgen',2);
+insert into Employees values(20,'yes','nadia',4);
+insert into Employees values(21,'yes','andriy',3);
+insert into Employees values(22,'yes','anastasia',1);
+insert into Employees values(23,'yes','vasil',3);

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit</title>
+</head>
+<body>
+<form th:action="@{/edit}" th:object="${employee}" method="POST">
+    Name:
+    <input type="text" th:value="${employee.name}" th:field="*{name}"/>
+    <br/>
+    Active:
+    <input type="text" th:value="${employee.active}" th:field="*{active}"/>
+    <br/>
+    Department:
+    <input type="text" th:value="${employee.department.name}" th:field="*{department.name}"/>
+    <br/>
+    <button>Save</button>
+    <button><a th:href="@{'/employees'}"></a>Cancel</button>
+</form>
+<br/>
+</body>
+</html>

@@ -1,10 +1,10 @@
 package com.service;
 
 import com.model.Department;
-import org.springframework.stereotype.Service;
 
-@Service
+import java.util.List;
+
 public interface DepartmentService {
 
-    Iterable<Department> findAll();
+    List<Department> findAll();
 }
